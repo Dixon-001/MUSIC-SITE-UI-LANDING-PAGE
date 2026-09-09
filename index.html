@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/output.css">
+</head>
+<body>
+    <div class="  bg-black min-h-screen">
+        <nav class="flex md:flex-row flex-col md:justify-between justify-center  md:gap-10 gap-5 md:ml-58 ml-4 pt-5 h-20 w-fit">
+            <div class="w-fit  flex  justify-between text-white md:gap-16 gap-8">
+                <a href="#" class="">Home</a>
+                <a href="#">Genre</a>
+                <a href="#">Country</a>
+            </div>
+            <div class="w-[416px] h-[48px] bg-white rounded-3xl flex md:flex hidden justify-between mb-2 ">
+                <input type="text" class="w-[142px] h-[42px] pl-4 items-center ml-[16px] border pointer-events-none border-white" placeholder="Search movies.....">
+                <svg class="items-center mt-3 mr-2"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/></svg>
+            </div>
+
+            <div class="flex  justify-between text-white md:gap-16 gap-8">
+                <a href="#" class="">Movies</a>
+                <a href="#">Series</a>
+                <a href="#">Animation</a>
+            </div>
+            <svg class="md:mr-20 mr-2 mt-2 flex md:flex-row flex-col" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="M192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm-.21 396Q450-96 429-117.15T408-168h144q0 30-21.21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"/></svg>
+        </nav>
+        <!-- bacground image  section-->
+        <div class="bg-[url('/image/bg-img.jpg')] h-[744px] w-full bg-cover bg-center bg-no-repeat">  
+            <div class=" h-fit flex justify-center gap-4 items-center pt-[250px]">
+                <button class="bg-red-500 md:w-[223px] w-[150px] md:h-[76px] h-[40px] text-white flex md:gap-2 gap-0.5 items-center rounded-2xl">
+                    <p class="w-[142px] h-[36px] font-poppins font-bold md:text-2xl text-md h">Watch now</p>
+                   <div class="w-[31px] h-[31px] rounded-full items-center justify-center">
+                     <img src="/image/play.png" alt="">
+                    </div>
+                </button >
+
+                <button class=" md:w-[223px] w-[150px] md:h-[76px] h-[40px] bg-transparent text-white flex items-center border border-red-500 border-2 rounded-3xl md:gap-2 gap-0.5">
+                     <p class="w-[152px] h-[36px] font-poppins font-bold md:text-2xl text-md ">Watch Later</p>
+                   <div class="w-[31px] h-[31px] rounded-full items-center justify-center">
+                    <img src="/image/clock.png" alt="">
+                     </div>
+                </button>
+                
+            </div>
+            <div class="h-fit w-fit flex md:flex-col flex-col md:ml-40 ml-0.5">
+                <div class="md:w-[420px] w-[300px] md:h-[48px] h-[24px] text-white">
+                    <p class="font-poppins font-bold md:text-[32px] text-xl">Avatar: The Way of Water</p>
+                </div>
+                <div class="w-fit h-fit text-white md:gap-4 gap-2 flex md: mt-0 mt-">
+                    <button class="md:w-[73px] w-[55px] md:h-[44px] h-[30px] text-black bg-white rounded-3xl p-[10px] md:gap-[10px] gap-[5px]">
+                        <p class="h-[24px] w-[53px] font-poppins font-semibold md:text-[16px] text-[10px]">Action</p>
+                    </button>
+
+                     <button class="md:w-[106px] w-[70px] md:h-[44px] h-[30px] text-black bg-white rounded-3xl p-[10px] gap-[10px]">
+                        <p class="h-[24px] w-[53px] font-poppins font-semibold md:text-[16px] text-[10px]">Aventure</p>
+                    </button>
+
+                     <button class="md:w-[142px] w-[90px] md:h-[44px] h-[30px] text-black bg-white rounded-3xl p-[0px] gap-[10px] ">
+                        <p class="h-[24px] md:w-[153px] w-[90px] font-poppins font-semibold md:text-[16px] text-[10px] text-center">science Fiction</p>
+                    </button>
+                    <div class="md:h-[44px] h-[30px] md:w-[614] w-[55px] flex md:flex-row flex-col  md:mt-2 mt-1 gap-1">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 20 20"><path fill="white" d="M5.673 0a.7.7 0 0 1 .7.7v1.309h7.517v-1.3a.7.7 0 0 1 1.4 0v1.3H18a2 2 0 0 1 2 1.999v13.993A2 2 0 0 1 18 20H2a2 2 0 0 1-2-1.999V4.008a2 2 0 0 1 2-1.999h2.973V.699a.7.7 0 0 1 .7-.699M1.4 7.742v10.259a.6.6 0 0 0 .6.6h16a.6.6 0 0 0 .6-.6V7.756zm5.267 6.877v1.666H5v-1.666zm4.166 0v1.666H9.167v-1.666zm4.167 0v1.666h-1.667v-1.666zm-8.333-3.977v1.666H5v-1.666zm4.166 0v1.666H9.167v-1.666zm4.167 0v1.666h-1.667v-1.666zM4.973 3.408H2a.6.6 0 0 0-.6.6v2.335l17.2.014V4.008a.6.6 0 0 0-.6-.6h-2.71v.929a.7.7 0 0 1-1.4 0v-.929H6.373v.92a.7.7 0 0 1-1.4 0z"/></svg>
+                        <p class="font-bold ">2022</p>
+                    </div>
+                    <div class="w-fit h-fit md:mt-2 mt-1 gap-1 flex md:flex-row flex-col  font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                        <p class="text-white">3:12:00</p>
+                    </div>
+                    <div class="w-fit h-fit md:mt-2 mt-1 gap-1 flex md:flex-row flex-col font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"/></svg>
+                        <p>8.5</p>
+                    </div>
+                    
+                </div>
+                <p class="md:w-[626px] w-[300px] md:h-[96px] h-[50px] text-white font-poppins font-medium text-[16px]">
+                        Set more than a decade after the events of the first film, learn the story of the 
+                        Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.
+                    </p>
+            </div>
+            <div class="justify-center items-center w-[185px] h-[21px] flex  gap-1 md:mt-40 mt-50 md:ml-[628px]">
+                <div class="bg-red-500 w-[37px] h-[10px] rounded-2xl"></div> 
+                 <div class="bg-white w-[10px] h-[10px] rounded-2xl"></div> 
+                 <div class="bg-white w-[10px] h-[10px] rounded-2xl"></div> 
+                <div class="bg-white w-[10px] h-[10px] rounded-2xl"></div> 
+            </div>
+
+         </div>
+         <!-- recently updated section  -->
+          <p class="w-[216px] h-[36px] font-poppins text-white font-medium text-[26px] md:ml-[160px] ml-15 md:mb-10 mb-10"> Recently Updated</p>
+            <div class=" w-fit h-fit flex md:flex-row flex-col bg-black md:ml-[160px] ml-15 md:gap-25 gap-10">
+                <div class="w-[206px] h-[103px] flex gap-2">
+                    <img class="w-[63] h-[103px] rounded-[5px]" src="/image/ac4deff26cdd825913f2d377f51cba538b1f64dd.jpg" alt="">
+                    <div class="w-[118px] h-[24px]">
+                        <p class="w-fit h-fit font-poppins font-500 text-[16px] text-white">The Flash</p>
+                        <p class="w-fit h-fit font-poppins font-400 text-[16px] text-white">Series/S 2/EP 9</p>
+                         <p class="w-fit h-fit font-poppins font-medium text-[16px] text-white">11/05/23</p>
+
+                    </div>
+                </div>
+
+                 <div class="w-[206px] h-[103px] flex gap-2">
+                    <img class="w-[63] h-[103px] rounded-[5px]" src="/image/fubar.jpg" alt="">
+                    <div class="w-[118px] h-[24px]">
+                        <p class="w-fit h-fit font-poppins font-500 text-[16px] text-white">Fubar</p>
+                        <p class="w-fit h-fit font-poppins font-400 text-[16px] text-white">Series/S 1/EP 8</p>
+                         <p class="w-fit h-fit font-poppins font-medium text-[16px] text-white">11/05/23</p>
+
+                    </div>
+                </div>
+
+                 <div class="w-[206px] h-[103px] flex gap-2">
+                    <img class="w-[63] h-[103px] rounded-[5px]" src="/image/manifest.jpg" alt="">
+                    <div class="w-[118px] h-[24px]">
+                        <p class="w-fit h-fit font-poppins font-500 text-[16px] text-white">Manifest</p>
+                        <p class="w-[123px] h-fit font-poppins font-400 text-[16px] text-white">Series/S 4/EP 12</p>
+                         <p class="w-fit h-fit font-poppins font-medium text-[16px] text-white">11/05/23</p>
+
+                    </div>
+                </div>
+
+                 <div class="w-[206px] h-[103px] flex gap-2">
+                    <img class="w-[63] h-[103px] rounded-[5px]" src="/image/silo.jpg" alt="">
+                    <div class="w-[118px] h-[24px]">
+                        <p class="w-fit h-fit font-poppins font-500 text-[16px] text-white">Silo</p>
+                        <p class="w-[123px] h-fit font-poppins font-400 text-[16px] text-white">Series/S 1/EP 10</p>
+                         <p class="w-fit h-fit font-poppins font-medium text-[16px] text-white">11/05/23</p>
+
+                    </div>
+                </div>
+                <!-- arraow right  -->
+                   <button class="w-20 h-20 bg-white rounded-full justify-center items-center  px- pt-6 pb-8 md:mr-10 hidden md:block">
+            <svg
+              class="ml-4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="#black"
+                d="m359.873 121.377l-22.627 22.627l95.997 95.997H16v32.001h417.24l-95.994 95.994l22.627 22.627L494.498 256z"
+              />
+            </svg>
+          </button>
+                <!-- arrow down  -->
+                   <!-- <button class="w-20 h-20 bg-white rounded-full justify-center items-center  px-5 pt-6 pb-8 md:mr-10 block md:hidden">
+           <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.13" d="M12 3v18m0 0l8.5-8.5M12 21l-8.5-8.5"/></svg>
+          </button> -->
+            </div>
+            <div class="flex justify-between md:ml-[160px] ml-15 mt-5">
+                 <p class="w-[216px] h-[36px] font-poppins text-white font-bold text-[26px]  md:mb-10 mb-10">Trending</p>
+                 <div class="mr-110 hidden md:block">
+                    <button class="w-fit h-fit flex gap-2 ">
+                    <p class="text-gray-500 font-poppins font-600 text-2xl">View all</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.13" d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5"/></svg>
+                 </button>
+                 </div>
+            </div>
+            <!-- movie selection row  -->
+            <div class="w-fit h-fit justify-between md:ml-[159px]   flex md:flex-row flex-col gap-20 ">
+               <div class="relative">
+
+                    <div class="absolute flex justify-between ml-2 gap-50">
+                        <div class="w-fit h-fit md:mt-2 mt-1 gap-1 flex md:flex-row flex-col  font-bold ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                            <p class="text-white">3:12:00</p>
+                    </div>
+                        <div class="w-fit h-fit md:mt-2 mt-1 gap-1 flex md:flex-row flex-col font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"/></svg>
+                            <p class="text-white" >8.5</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex  items-center justify-between  absolute inset-0 mx-40">
+                        <img class="h-[49px] w-[59px]" src="/play.png" alt="">
+                    </div>
+                    <div class="">
+                        <img class="w-[352px] h-[293px] object-cover rounded-[10px]" src="/image/madelin.jpg" alt="">
+                    </div>
+                    <div class="flex justify-between pt-2 ">
+                        <p class="w-[104px] h-[36px] font-poppins font-600 text-white text-2xl">Medellin</p>
+                        <button class=" w-fit h-fit p-[8px] rounded-[10px] ml-[67px] bg-red-500 text-white text-[16px] font-poppins font-400 ">action</button>
+                        <button class=" w-fit h-fit p-[8px] rounded-[10px] ml-[px] bg-red-500 text-white text-[16px] font-poppins font-400 ">Comdey</button>
+
+                    </div>
+                </div>
+
+                <!-- fast x movie  -->
+               <div class="relative">              
+                    <div class="absolute flex justify-between ml-2 gap-50">
+                        <div class="w-fit h-fit md:mt-2 mt-1 gap-1 flex md:flex-row flex-col  font-bold ">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                            <p class="text-white">3:12:00</p>
+                       </div>
+                        <div class="w-fit h-fit md:mt-2 mt-1 gap-1 flex md:flex-row flex-col font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"/></svg>
+                            <p class="text-white" >8.5</p>
+                        </div>
+                    </div>
+                    
+                    <div class="flex  items-center justify-between  absolute inset-0 mx-40">
+                        <img class="h-[49px] w-[59px]" src="/play.png" alt="">
+                    </div>
+                    <div class="">
+                        <img class="w-[352px] h-[293px] object-cover rounded-[10px]" src="/image/fast x.jpg" alt="">
+                    </div>
+                    <div class="flex justify-between pt-2 ">
+                        <p class="w-[104px] h-[36px] font-poppins font-600 text-white text-2xl">Fast x</p>
+                        <button class=" w-fit h-fit p-[8px] rounded-[10px]  bg-red-500 text-white text-[16px] font-poppins font-400 ">action</button>
+                        <button class=" w-fit h-fit p-[8px] rounded-[10px]  bg-red-500 text-white text-[16px] font-poppins font-400 ">Crime</button>
+                        <button class=" w-fit h-fit p-[8px] rounded-[10px]  bg-red-500 text-white text-[16px] font-poppins font-400 ">Thriller</button>
+
+                    </div>
+                </div>
+                <!-- black demond  -->
+               <div class="relative">
+
+                <div class="absolute flex justify-between ml-2 gap-50">
+                    <div class="w-fit h-fit md:mt-2 mt-1 gap-1 flex md:flex-row flex-col  font-bold ">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                        <p class="text-white">3:12:00</p>
+                </div>
+                    <div class="w-fit h-fit md:mt-2 mt-1 gap-1 flex md:flex-row flex-col font-bold">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" d="m5.825 21l1.625-7.025L2 9.25l7.2-.625L12 2l2.8 6.625l7.2.625l-5.45 4.725L18.175 21L12 17.275z"/></svg>
+                        <p class="text-white" >8.5</p>
+                    </div>
+                </div>
+                
+                <div class="flex  items-center justify-between  absolute inset-0 mx-40">
+                    <img class="h-[49px] w-[59px]" src="/play.png" alt="">
+                </div>
+                <div class="">
+                    <img class="w-[352px] h-[293px] object-cover rounded-[10px]" src="/image/the black demon.jpg" alt="">
+                </div>
+                <div class="flex justify-between gap-2  mt-2">
+                    <p class="w-[199px] h-[36px] font-poppins font-600 text-white text-2xl">The Black Dem...</p>
+                    <button class=" w-fit h-fit p-[8px] rounded-[10px]  bg-red-500 text-white text-[16px] font-poppins font-400 ">Horror</button>
+                 <button class=" w-fit h-fit p-[8px] rounded-[10px] bg-red-500 text-white text-[16px] font-poppins font-400 ">Thriller</button>
+
+                </div>
+               </div>
+
+            </div>
+            <!-- new release-series section  -->
+           <div class="flex justify-between md:ml-[160px] ml-15 mt-5 ">
+                <p class="w-[268px] h-[36px] font-poppins text-white font-bold text-[26px]  md:mb-10 mb-10">New Release-Movies</p>
+                <div class="mr-110 hidden md:block">
+                    <button class="w-fit h-fit flex gap-2 ">
+                    <p class="text-gray-500 font-poppins font-600 text-2xl">View all</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.13" d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5"/></svg>
+                    </button>
+               </div>
+            </div>
+            <!-- series selectin  -->
+             <div  class="w-fit h-fit justify-between md:ml-[159px] ml-15  flex md:flex-row flex-col gap-18 ">
+                <!-- ghosted  -->
+               <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/ghosted.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[69px] h-[24px] font-poppins font-500 text-white text-[16px]">ghosted</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[121px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- john wick -->
+                 <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/john wick.jpg" alt="">
+
+                    <div class="flex items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[126px] h-[24px] font-poppins font-500 text-white text-[16px]">John wick:ch...</p>
+                        <div class="items-center justify-between w-[121px]">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[82px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- guardian  -->
+                 <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/guardian.jpg" alt="">
+
+                    <div class="flex gap-2 items-center justify-between h-[32px] w-[256px]">
+                        <p class="w-[133px] h-[24px] font-poppins font-500 text-white text-[16px]">Guardian of the..</p>
+                        <div class="items-center justify-between w-[121px]">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[82px] h-[32px] pt-[  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- the convenant -->
+                 <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/the covenant.jpg" alt="">
+
+                     <div class="flex items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[126px] h-[24px] font-poppins font-500 text-white text-[16px]">The conven..</p>
+                        <div class="items-center justify-between w-[121px]">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[82px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+             <div class="flex justify-between md:ml-[160px] ml-15 mt-5 ">
+                <p class="w-[268px] h-[36px] font-poppins text-white font-bold text-[26px]  md:mb-10 mb-10">New Release-Series</p>
+                <div class="mr-110 hidden md:block">
+                    <button class="w-fit h-fit flex gap-2 ">
+                    <p class="text-gray-500 font-poppins font-600 text-2xl">View all</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.13" d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5"/></svg>
+                    </button>
+               </div>
+            </div>
+            <!-- series selectin  -->
+             <div  class="w-fit h-fit justify-between md:ml-[159px] ml-15  flex md:flex-row flex-col gap-18 ">
+                <!-- silo -->
+               <div class="relative">
+                    <p class="absolute bg-red-500 text-white font-poppins font-500 text-[12px] w-[25px] h-[18px] ml-2 mt-2 rounded-[5px]">EP 6</p>
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/silo.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[69px] h-[24px] font-poppins font-500 text-white text-[16px]">silo</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[78px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    
+                                    <p class="text-white pb-1 w-[117px] h-[32px]">Season 1 </p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- black knight -->
+               <div class="relative">
+                    <p class="absolute bg-red-500 text-white font-poppins font-500 text-[12px] w-[25px] h-[18px] ml-2 mt-2 rounded-[5px]">EP 6</p>
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/black knight.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[100px] h-[24px] font-poppins font-500 text-white text-[16px]">Black Knight</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[78px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    
+                                    <p class="text-white pb-1 w-[117px] h-[32px]">Season 1 </p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- drops of god -->
+                <div class="relative">
+                    <p class="absolute bg-red-500 text-white font-poppins font-500 text-[12px] w-[25px] h-[18px] ml-2 mt-2 rounded-[5px]">EP 6</p>
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/drops of god.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[100px] h-[24px] font-poppins font-500 text-white text-[16px]">Drops of God</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[78px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    
+                                    <p class="text-white pb-1 w-[117px] h-[32px]">Season 1 </p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- the night agent -->
+                 <div class="relative">
+                    <p class="absolute bg-red-500 text-white font-poppins font-500 text-[12px] w-[25px] h-[18px] ml-2 mt-2 rounded-[5px]">EP 6</p>
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/the night agent.jpg" alt="">
+
+                    <div class="flex  items-center justify-between h-[32px] w-[256px]">
+                        <p class="w-[129px] h-[24px] font-poppins font-medium text-white text-[16px]"> The Night Agent</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[78px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    
+                                    <p class="text-white pb-1 w-[117px] h-[32px]">Season 1 </p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                </div>
+                <!-- recommended section  -->
+                <div class="flex  justify-between md:ml-[160px] ml-0 mt-5 ">
+                    <div class="flex md:flex-row flex-col">
+                        <p class="w-[268px] h-[36px] font-poppins text-white font-bold text-[26px]  md:mb-10 mb-10 md:ml-0 ml-15">Recommended</p>
+                        <div class="flex justify-between gap-4 ">
+                        <button class=" w-fit h-[44px] p-[8px] rounded-[10px]  bg-red-500 text-white text-[16px] font-poppins font-400 ">Movies</button>
+                        <button class=" w-fit h-[44px] p-[8px] rounded-[10px]  bg-transparent border border-red-500 text-white text-[16px] font-poppins font-400 ">series</button>
+                        <button class=" w-fit h-fit p-[8px] rounded-[10px]  bg-transparent border border-red-500 text-white text-[16px] font-poppins font-400 ">Animation</button>
+
+                    </div>
+                    </div>
+                
+
+                     
+                <div class="mr-110 hidden md:block">
+                    <button class="w-fit h-fit flex gap-2 ">
+                    <p class="text-gray-500 font-poppins font-600 text-2xl">View all</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="gray" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.13" d="M3 12h18m0 0l-8.5-8.5M21 12l-8.5 8.5"/></svg>
+                    </button>
+               </div>
+            </div>
+            <!-- recommended selectin  -->
+             <div  class="w-fit h-fit justify-between md:ml-[159px] ml-15  flex md:flex-row flex-col gap-18 ">
+                <!-- robots -->
+               <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/robots.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[69px] h-[24px] font-poppins font-500 text-white text-[16px]">Robots</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[46px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">CAM</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- love again -->
+                  <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/love again.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[89px] h-[24px] font-poppins font-500 text-white text-[16px]">Love again</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[46px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">CAM</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- hypnotic -->
+                <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/hypnotics.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[89px] h-[24px] font-poppins font-500 text-white text-[16px]">Hypnotic</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[46px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">CAM</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- paint  -->
+                 <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/paint.jpg" alt="">
+
+                        <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                            <p class="w-[89px] h-[24px] font-poppins font-500 text-white text-[16px]">paint</p>
+                            <div class="items-center justify-between">
+                                <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                                <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                    <div class="w-[82px] h-[32px] flex ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                        <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                    </div>
+                                </button>
+                            </div>
+
+                    </div>
+            
+            </div>
+                <!-- next section  -->
+            </div>
+            <div  class="w-fit h-fit justify-between md:ml-[159px] ml-15  flex md:flex-row flex-col gap-18 ">
+                <!-- the book club -->
+               <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/book club.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[69px] h-[24px] font-poppins font-500 text-white text-[16px]">The Book Club</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[46px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">CAM</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- the mother -->
+                  <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/the mother.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[89px] h-[24px] font-poppins font-500 text-white text-[16px]">The  Mother</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- 6th january-->
+                <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/january 6th.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[89px] h-[24px] font-poppins font-500 text-white text-[16px]">6th January</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[82px] h-[32px] flex ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                    <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- sisu  -->
+                 <div >
+                     <img class="w-[256px] h-[344px] object-fit rounded-[10px] " src="/image/sisu.jpg" alt="">
+
+                        <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                            <p class="w-[89px] h-[24px] font-poppins font-500 text-white text-[16px]">Sisu</p>
+                            <div class="items-center justify-between">
+                                <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                                <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                    <div class="w-[82px] h-[32px] flex ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="m614-310 51-51-149-149v-210h-72v240l170 170ZM480-96q-79.38 0-149.19-30T208.5-208.5Q156-261 126-330.96t-30-149.5Q96-560 126-630q30-70 82.5-122t122.46-82q69.96-30 149.5-30t149.55 30.24q70 30.24 121.79 82.08 51.78 51.84 81.99 121.92Q864-559.68 864-480q0 79.38-30 149.19T752-208.5Q700-156 629.87-126T480-96Zm0-384Zm.48 312q129.47 0 220.5-91.5Q792-351 792-480.48q0-129.47-91.02-220.5Q609.95-792 480.48-792 351-792 259.5-700.98 168-609.95 168-480.48 168-351 259.5-259.5T480.48-168Z"/></svg>
+                                        <p class="text-white pb-1 w-[53px] h-[24px]">3:12:00</p>
+                                    </div>
+                                </button>
+                            </div>
+
+                    </div>
+            
+            </div>
+       </div>  
+       
+
+    </section>
+</body>
+</html>
