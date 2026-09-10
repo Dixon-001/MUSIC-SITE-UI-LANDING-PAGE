@@ -8,38 +8,39 @@
 </head>
 <body>
     <div class="  bg-black min-h-screen">
-        <nav class="flex md:flex-row flex-col md:justify-between justify-center  md:gap-5 gap-5 md:ml-58 ml-4 pt-5 h-20 w-fit">
-            <div class="w-fit  flex  justify-between text-white md:gap-8 gap-8">
+         <nav class="flex  md:px-[160px] px-2 justify-between  mx-auto  md:gap-20 gap-15  md:h-20 h-15 w-fit  items-center">
+             <div class=" justify-between text-white md:gap-10 gap-8 hidden md:flex ">
                 <a href="#" class="">Home</a>
                 <a href="#">Genre</a>
                 <a href="#">Country</a>
             </div>
-            <div class="w-[416px] h-[48px] bg-white rounded-3xl flex md:flex hidden justify-between mb-2 ">
+
+            <div class="md:w-[416px] w-fit h-[48px] bg-white rounded-3xl flex md:flex  justify-between mb-2 ">
                 <input type="text" class="w-[142px] h-[42px] pl-4 items-center ml-[16px] border pointer-events-none border-white" placeholder="Search movies.....">
                 <svg class="items-center mt-3 mr-2"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" d="m19.6 21l-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.888T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5q0 1.1-.35 2.075T14.7 13.3l6.3 6.3zM9.5 14q1.875 0 3.188-1.312T14 9.5t-1.312-3.187T9.5 5T6.313 6.313T5 9.5t1.313 3.188T9.5 14"/></svg>
             </div>
 
-            <div class="flex  justify-between text-white md:gap-8 gap-8">
-                <a href="#" class="">Movies</a>
-                <a href="#">Series</a>
-                <a href="#">Animation</a>
+            <div class="flex gap-25">
+                <div class="hidden md:flex justify-between text-white md:gap-10 gap-8">
+                    <a href="#" class="">Movies</a>
+                    <a href="#">Series</a>
+                    <a href="#">Animation</a>
+                </div>
+
+                <svg class=" flex md:flex-row flex-col" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="M192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm-.21 396Q450-96 429-117.15T408-168h144q0 30-21.21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"/></svg>
             </div>
-           <div class="flex  text-white md:gap-2 gap-2">
-            <a href="#" class="">Login/signup</a>
-             <svg class="md:mr-20 mr-2 mt-2 flex md:flex-row flex-col" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="white"><path d="M192-216v-72h48v-240q0-87 53.5-153T432-763v-53q0-20 14-34t34-14q20 0 34 14t14 34v53q85 16 138.5 82T720-528v240h48v72H192Zm288-276Zm-.21 396Q450-96 429-117.15T408-168h144q0 30-21.21 51t-51 21ZM312-288h336v-240q0-70-49-119t-119-49q-70 0-119 49t-49 119v240Z"/></svg>
-           </div>
         </nav>
-        <section class="flex justify-between md:ml-[160px] ml-1 md:mt-5 mt-8">
-                <div class="relative flex flex-col">
-                    <img class="md:h-[712px] h-[300px] md:w-[1132px] w-[330px]" src="/image/playing.png" alt="">
+        <section class="flex justify-between md:px-[160px] px-10 md:ml-35 ml-0 md:mt-5 mt-8">
+                <div class="relative flex flex-col md:px[160px] px-1">
+                    <img class="md:h-[712px] h-[300px] md:w-[1232px] w-[380px]" src="/image/playing.png" alt="">
                     <!-- <video class="h-[712px] w-[1132px] rounded-lg" controls><source  src="https://docs.material-tailwind.com/demo.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                     </video> -->
-                    <div class="absolute bottom-0 ml-10">
-                        <div class="felx flex-col ">
-                            <div class="flex items-center mx-auto">
-                            <div class="md:w-[475px] w-[100px] bg-white h-[5px]"></div> <div class="bg-white w-[32px] h-[32px] rounded-full" > <div class="w-[20px] h-[20px] rounded-full bg-indigo-300 items-center m-auto mt-1.5"></div></div><div class="md:w-[475px] w-[110px] bg-gray-500 h-[5px]"></div>
-                            </div>
+                    <div class="absolute bottom-0  md:ml-25 ml-0"> <div class="felx flex-col ">
+                            <div class="flex items-center mx-auto ">
+                            <div class="md:w-[495px] w-[100px] bg-white h-[5px]"></div> <div class="bg-white w-[32px] h-[32px] rounded-full" > <div class="w-[20px] h-[20px] rounded-full bg-indigo-300 items-center m-auto mt-1.5"></div></div><div class="md:w-[475px] w-[110px] bg-gray-500 
+                            h-[5px]"></div>
+                         </div>
 
                         </div>
                         <div class="w-fit flex justify-evenly md:gap-70 gap-5 mx-auto ">
@@ -71,20 +72,20 @@
 
                 </div>
         </section>
-        <section class="flex md:flex-row flex-col justify-between md:ml-[160px]  mt-20 w-fit gap-6">
-            <img class="w-[352px]  h-[576px]" src="/image/silo.jpg" alt="">
-            <div class="flex flex-col">
-                <div class="md:w-[736px] w-[400px] h-[56px] flex md:flex-row flex-col justify-between   ">
-                    <p class="w-[62px] h-[51px] font-poppins font-600 text-[34px] text-white">Silo</p>
-                    <button class=" w-fit h-fit p-[8px] rounded-[10px] ml-[67px] bg-red-500 text-white text-[16px] font-poppins font-400 "> + Add to Favourite</button>
+        <section class="flex md:flex-row flex-col justify-between md:px-[160px] px-1 md:ml-35 ml-0   mt-20 w-fit md:gap-20 gap-2 bg-black">
+            <img class="md:w-[352px] w-[350px]  md:h-[576px] h-[400px] px-2" src="/image/silo.jpg" alt="">
+            <div class="flex flex-col ">
+                <div class="md:w-[736px] w-fit h-[56px] flex md:flex-row flex-col justify-between gap-10  ">
+                    <p class="w-[62px] h-[51px] font-poppins px-1 font-600 text-[34px] text-white">Silo</p>
+                    <button class=" md:w-[190px] w-[250px] h-fit p-[8px] rounded-[10px] md:ml-[67px] ml-12 bg-red-500 text-white text-[16px] font-poppins font-400 "> + Add to Favourite</button>
                 </div>
 
-                <div class="flex md:flex-row flex-col w-fit md:justify-between justify-evenly gap-3 md: mt-0 mt-12">
-                     <div class="flex justify-between gap-2 ">
+                <div class="flex md:flex-row flex-col w-fit md:justify-between justify-evenly gap- md:mt-0 mt-22">
+                     <div class="flex justify-between gap-2 mx-auto md:mr-0 mr-15">
                         <button class=" w-[80px] h-[44px] p-[8px] rounded-[10px] ml-[67px] bg-white text-[16px] font-poppins font-600 ">Drama</button>
                         <button class=" w-fit h-fit p-[8px] rounded-[10px] ml-[px] bg-white t text-[16px] font-poppins font-600 ">science Fiction</button>
                     </div>
-                    <div class="flex  gap-5">
+                    <div class="flex  gap-5 px-10">
                         <div class="w-[86px] h-[44px] flex justify-between pt-2">
                        <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#FFFFFF"><path d="M216-96q-29.7 0-50.85-21.5Q144-139 144-168v-528q0-29 21.15-50.5T216-768h72v-96h72v96h240v-96h72v96h72q29.7 0 50.85 21.5Q816-725 816-696v528q0 29-21.15 50.5T744-96H216Zm0-72h528v-360H216v360Zm0-432h528v-96H216v96Zm0 0v-96 96Zm264.21 216q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-394.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-384q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Zm-156 144q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5ZM298.5-250.29q-10.5-10.29-10.5-25.5t10.29-25.71q10.29-10.5 25.5-10.5t25.71 10.29q10.5 10.29 10.5 25.5t-10.29 25.71q-10.29 10.5-25.5 10.5t-25.71-10.29ZM636.21-240q-15.21 0-25.71-10.29t-10.5-25.5q0-15.21 10.29-25.71t25.5-10.5q15.21 0 25.71 10.29t10.5 25.5q0 15.21-10.29 25.71t-25.5 10.5Z"/></svg>
                        <p class=" text-white font-poppins font-500 text-[16px] w--[39px] h-[254px]">2023</p>
@@ -99,19 +100,19 @@
                     </div>
                     </div>
                  </div>
-                    <p class="md:w-[708px] w-fit md:h-[72px] h-fit text-[16px] font-poppins text-white font-400 mt-5">In a ruined and toxic future, a community exists in a giant  underground silo that plunges hundreds of stories deep. There, men and women live in a society full of regulations they 
+                    <p class="md:w-[708px] md:w-[700px] w-[330px] md:h-[72px] h-fit text-[16px] font-poppins text-white font-400 mt-5 px-8">In a ruined and toxic future, a community exists in a giant  underground silo that plunges hundreds of stories deep. There, men and women live in a society full of regulations they 
                     believe are meant to protect them.
                     </p>
-                    <div class="font-poppins text-white text-[16px] font-400 w-fit h-fit ml-10 ">
+                    <div class="font-poppins text-white text-[16px] font-400 md:w-fit w-[300px] h-fit ml-10 mt-4 ">
                        <div class="flex flex-col gap-2">
                         <div class="flex gap-1"> <p >country</p> <p>:</p> <p>united states</p></div>
                         <div class="flex gap-1"><p>Genre</p> <p>:</p> <p>Drama, science Fiction</p></div>
                         <div class="flex gap-1"><p>Release Date</p> <p>:</p> <p>May 05 2023</p></div>
                         <div class="flex gap-1"><p>Production</p> <p>:</p> <p>AMC Studios</p></div>
-                        <div class="flex md:flex-row flex-col gap-1">
+                        <div class="flex md:flex-row gap-1">
                             <p class="mt-1">cast</p> <p class="mt-1">:</p>
 
-                            <div class="w-[338px] h-[96px]">
+                            <div class="md:w-[338px] w-[280px] h-[96px]">
                                 <p> Rashida Jones, David Oyewolo, Tim Robbins
                                     Tim Robbins, Rebecca Ferguson, Avi Nash
                                  </p>
@@ -122,13 +123,296 @@
                     
 
                 </div> 
-                <button class=" w-[104px] h-[36px] p-[8px] rounded-[10px] ml-[67px] bg-transparent text-[14px] font-poppins font-500 ">Season 1</button>
                     <!-- next entry  -->
             </div>
             
         </section>
     
+        <section class="flex-col justify-between   w-full md:gap-20 gap-2 bg-black">
+            <div class="md:px-[160px] px-1  flex md:flex-row flex-col items-center md:ml-18 ml-0 md:mr-0 mr-18">
+                <button class=" w-[152px] h-[36px] p-[8px] border-2  hover: border-blue-500 ml-[67px] bg-transparent h text-[24px] font-poppins flex items-center justify-center font-500 text-white">Season 1  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 1024 1024"><path fill="white" d="M104.7 338.8a64 64 0 0 1 90.5 0L512 655.6l316.8-316.8a64 64 0 0 1 90.5 90.4l-362 362.1a64 64 0 0 1-90.5 0l-362.1-362a64 64 0 0 1 0-90.5"/></svg>
+                </button>  
+            </div>
 
+            <div class="md:px-[160px] px-1 items-center mt-10 ml-18 flex md:flex-row flex-col gap-15">
+                <button class="md:w-[544px] w-[320px] h-[58px] text-white bg-red-500 flex items-center px-2 gap-2 rounded-md md:ml-17 ml-0 md:mr-0 mr-18">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="white" fill-rule="evenodd" d="M5.669 4.76a1.47 1.47 0 0 1 2.04-1.177c1.062.453 3.442 1.532 6.462 3.276c3.021 1.744 5.146 3.266 6.069 3.958c.788.59.79 1.763.001 2.355c-.914.687-3.013 2.191-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28a1.467 1.467 0 0 1-2.038-1.177c-.138-1.141-.396-3.734-.396-7.236c0-3.5.257-6.092.396-7.235" clip-rule="evenodd"/></svg>
+                    <p class="font-poppins font-400 text-[16px] h-[24px]">Episode 1: Freedom Day</p>
+                </button>
+
+                  <button class="md:w-[544px] w-[320px] h-[58px]  bg-white flex items-center px-2 gap-2 rounded-md md:ml-17 ml-0 md:mr-0 mr-18">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" fill-rule="evenodd" d="M5.669 4.76a1.47 1.47 0 0 1 2.04-1.177c1.062.453 3.442 1.532 6.462 3.276c3.021 1.744 5.146 3.266 6.069 3.958c.788.59.79 1.763.001 2.355c-.914.687-3.013 2.191-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28a1.467 1.467 0 0 1-2.038-1.177c-.138-1.141-.396-3.734-.396-7.236c0-3.5.257-6.092.396-7.235" clip-rule="evenodd"/></svg>
+                    <p class="font-poppins font-400 text-[16px] h-[24px]">Episode 4: Truth</p>
+                </button>
+            </div>
+
+             <div class="md:px-[160px] px-1 items-center mt-10 ml-18 flex md:flex-row flex-col gap-15">
+                 <button class="md:w-[544px] w-[320px] h-[58px]  bg-white flex items-center px-2 gap-2 rounded-md md:ml-17 ml-0 md:mr-0 mr-18">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" fill-rule="evenodd" d="M5.669 4.76a1.47 1.47 0 0 1 2.04-1.177c1.062.453 3.442 1.532 6.462 3.276c3.021 1.744 5.146 3.266 6.069 3.958c.788.59.79 1.763.001 2.355c-.914.687-3.013 2.191-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28a1.467 1.467 0 0 1-2.038-1.177c-.138-1.141-.396-3.734-.396-7.236c0-3.5.257-6.092.396-7.235" clip-rule="evenodd"/></svg>
+                    <p class="font-poppins font-400 text-[16px] h-[24px]">Episode 2: Holston’s Pick</p>
+                </button>
+
+                <button class="md:w-[544px] w-[320px] h-[58px] bg-white flex items-center px-2 gap-2 rounded-md md:ml-17 ml-0 md:mr-0 mr-18">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" fill-rule="evenodd" d="M5.669 4.76a1.47 1.47 0 0 1 2.04-1.177c1.062.453 3.442 1.532 6.462 3.276c3.021 1.744 5.146 3.266 6.069 3.958c.788.59.79 1.763.001 2.355c-.914.687-3.013 2.191-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28a1.467 1.467 0 0 1-2.038-1.177c-.138-1.141-.396-3.734-.396-7.236c0-3.5.257-6.092.396-7.235" clip-rule="evenodd"/></svg>
+                    <p class="font-poppins font-400 text-[16px] h-[24px]">Episode 5: The Janitor’s Boy</p>
+                </button>
+            </div>
+
+             <div class="md:px-[160px] px-1 items-center mt-10 ml-18 flex md:flex-row flex-col gap-15">
+                 <button class="md:w-[544px] w-[320px] h-[58px]  bg-white flex items-center px-2 gap-2 rounded-md md:ml-17 ml-0 md:mr-0 mr-18">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" fill-rule="evenodd" d="M5.669 4.76a1.47 1.47 0 0 1 2.04-1.177c1.062.453 3.442 1.532 6.462 3.276c3.021 1.744 5.146 3.266 6.069 3.958c.788.59.79 1.763.001 2.355c-.914.687-3.013 2.191-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28a1.467 1.467 0 0 1-2.038-1.177c-.138-1.141-.396-3.734-.396-7.236c0-3.5.257-6.092.396-7.235" clip-rule="evenodd"/></svg>
+                    <p class="font-poppins font-400 text-[16px] h-[24px]">Episode 3: Machines</p>
+                </button>
+
+                <button class="md:w-[544px] w-[320px] h-[58px] bg-white flex items-center px-2 gap-2 rounded-md md:ml-17 ml-0 md:mr-0 mr-18">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="black" fill-rule="evenodd" d="M5.669 4.76a1.47 1.47 0 0 1 2.04-1.177c1.062.453 3.442 1.532 6.462 3.276c3.021 1.744 5.146 3.266 6.069 3.958c.788.59.79 1.763.001 2.355c-.914.687-3.013 2.191-6.07 3.956c-3.06 1.766-5.412 2.832-6.464 3.28a1.467 1.467 0 0 1-2.038-1.177c-.138-1.141-.396-3.734-.396-7.236c0-3.5.257-6.092.396-7.235" clip-rule="evenodd"/></svg>
+                    <p class="font-poppins font-400 text-[16px] h-[24px]">Episode 6: The Relic</p>
+                </button>
+            </div>
+
+            <div class="flex justify-between md:px-[160px] px-10 mt-5 ">
+               <div class="flex md:flex-row flex-col">
+                 <p class="w-[268px] h-[36px] font-poppins text-white font-bold text-[26px]  md:mb-10 mb-10 md:ml-36 ml-0">You may Also Like</p>
+               
+               </div>
+    
+            </div>
+
+            <!-- recommended selectin  -->
+             <div  class="w-fit h-fit justify-between md:px-[159px] px-10  flex md:flex-row flex-col md:gap-16 gap-10 md:ml-36 ml-0">
+                <!-- robots -->
+               <div >
+                     <img class="md:w-[256px] w-[352px] h-[344px] object-fit rounded-[10px] " src="/image/black knight.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[100px] h-[24px] font-poppins font-500 text-white text-[16px]">Black Knight</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[78px] h-[32px] flex ">
+                                    <p class="text-white pb-1 w-[73px] h-[24px]">Season 1</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- love again -->
+                  <div >
+                     <img class="md:w-[256px] w-[352px] h-[344px] object-fit rounded-[10px] " src="/image/drops of god.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[100px] h-[24px] font-poppins font-500 text-white text-[16px]">Drops of God</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                  <div class="w-[78px] h-[32px] flex ">
+                                    <p class="text-white pb-1 w-[73px] h-[24px]">Season 1</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- scoop -->
+                <div >
+                     <img class="md:w-[256px] w-[352px] h-[344px] object-fit rounded-[10px] " src="/image/scoop.png" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[89px] h-[24px] font-poppins font-500 text-white text-[16px]">Scoop</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                  <div class="w-[78px] h-[32px] flex ">
+                                    <p class="text-white pb-1 w-[73px] h-[24px]">Season 1</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- prank panel  -->
+                 <div >
+                     <img class="md:w-[256px] w-[352px] h-[344px] object-fit rounded-[10px] " src="/image/prank panel.png" alt="">
+
+                        <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                            <p class="w-[100px] h-[24px] font-poppins font-500 text-white text-[16px]">Prank Panel</p>
+                            <div class="items-center justify-between">
+                                <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                                <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                     <div class="w-[78px] h-[32px] flex ">
+                                    <p class="text-white pb-1 w-[73px] h-[24px]">Season 1</p>
+                                 </div>
+                                </button>
+                            </div>
+
+                    </div>
+            
+            </div>
+            
+        </div>
+        <div  class="w-fit h-fit justify-between md:px-[160px] px-10  flex md:flex-row flex-col md:gap-15 gap-10 md:ml-36 ml-0 mt-15">
+                <!-- nikita -->
+               <div >
+                     <img class="md:w-[256px] w-[352px] h-[344px] object-fit rounded-[10px] " src="/image/nikkiita.png" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px] ">
+                        <p class="w-[69px] h-[24px] font-poppins font-500 text-white text-[16px]">Nikita</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                  <div class="w-[78px] h-[32px] flex ">
+                                    <p class="text-white pb-1 w-[73px] h-[24px]">Season 1</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- from -->
+                  <div >
+                     <img class="md:w-[256px] w-[352px] h-[344px] object-fit rounded-[10px] " src="/image/from.png" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[89px] h-[24px] font-poppins font-500 text-white text-[16px]">From</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                  <div class="w-[78px] h-[32px] flex ">
+                                    <p class="text-white pb-1 w-[73px] h-[24px]">Season 1</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div> 
+                <!-- spy/master-->
+                <div >
+                     <img class="md:w-[256px] w-[352px] h-[344px] object-fit rounded-[10px] " src="/image/spy.jpg" alt="">
+
+                    <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                        <p class="w-[100px] h-[24px] font-poppins font-500 text-white text-[16px]">Spy/Master</p>
+                        <div class="items-center justify-between">
+                            <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                            <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                 <div class="w-[78px] h-[32px] flex ">
+                                    <p class="text-white pb-1 w-[73px] h-[24px]">Season 1</p>
+                                 </div>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- little bird  -->
+                 <div >
+                     <img class="md:w-[256px] w-[352px] h-[344px] object-fit rounded-[10px] " src="/image/little bird.png" alt="">
+
+                        <div class="flex  gap-4 pt- items-center justify-between h-[32px] w-[255px]">
+                            <p class="w-[100px] h-[24px] font-poppins font-500 text-white text-[16px]">Little Bird</p>
+                            <div class="items-center justify-between">
+                                <button class=" w-[31px] h-[32px] gap-[8px] rounded-[10px] p-1 bg-red-500 text-white text-[16px] font-poppins font-400 ">HD</button>
+                                <button class=" w-[h2px] h-[32px] pt-[4px]  rounded-[10px]  bg-transparent text-white text-[16px] font-poppins font-400 border border-red-500 "> 
+                                     <div class="w-[78px] h-[32px] flex ">
+                                    <p class="text-white pb-1 w-[73px] h-[24px]">Season 1</p>
+                                 </div>
+                                </button>
+                            </div>
+
+                    </div>
+            
+            </div>
+            </div>
+
+            <div class="w-full md:gap-20 gap-2 bg-blac">
+                <div class="flex-col justify-between md:px-[160px] px-10 mt-10 ">
+                    <div class="flex ">
+                        <p class="w-[268px] h-[36px] font-poppins text-white font-bold text-[26px]  md:mb-10 mb-10 md:ml-36 ml-0">Comments</p>
+                </div>
+
+                <div class=" w-[976px] h-[128px] flex md:gap-10 gap-2 md:ml-36 ml-0">
+                    
+                    <img class="h-[128px] w-[128px] rounded-full" src="/image/james.png" alt="">
+                    <div class="flex-col h-fit">
+                        <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">James</p>
+                        <div class="bg-white md:w-[816px] w-[160px] md:h-[72px] h-[50px] rounded-md flex items-center px-4"> <p>write your comment here</p></div>
+                    </div>
+               </div>
+
+                <div class=" w-[976px] h-[128px] flex gap-10 md:ml-36 ml-0 mt-8" >
+                    
+                    <img class="h-[128px] w-[128px] rounded-full" src="/image/arlene.png" alt="">
+                    <div class="flex-col h-fit">
+                        <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">Arlene</p>
+                        <div class="text-white md:w-[816px] w-[160px] h-[72px] rounded-md flex-col items-center mt-2"> 
+                            <p>12/06/2020</p>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con</p>
+                            <div class="flex">
+                                <div class="flex gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="white" d="M21 8q.8 0 1.4.6T23 10v2q0 .175-.05.375t-.1.375l-3 7.05q-.225.5-.75.85T18 21H7V8l6-5.95q.375-.375.888-.437t.987.187t.7.7t.1.925L14.55 8zM9 8.85V19h9l3-7v-2h-9l1.35-5.5zM4 21q-.825 0-1.412-.587T2 19v-9q0-.825.588-1.412T4 8h3v2H4v9h3v2zm5-2V8.85z"/></svg>
+                                    <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">10</p>
+                                </div>
+
+                                 <div class="flex gap-10">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="white" d="M21 15h-3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1m0-1V5h-3v9zM5.28 5.97l-3 5c-.18.3-.28.66-.28 1.03v1a2 2 0 0 0 2 2h5.61l-1.46 5.44v.02c-.09.33-.01.7.26.96l6.01-6l-.01-.01c.37-.36.59-.86.59-1.41V7a2 2 0 0 0-2-2H7c-.73 0-1.37.39-1.72.97M1 12c0-.59.17-1.15.47-1.61l2.91-4.84C4.89 4.62 5.87 4 7 4h6a3 3 0 0 1 3 3v7c0 .83-.33 1.58-.88 2.12l-6.71 6.72l-.71-.71c-.53-.53-.7-1.29-.51-1.97L8.31 16H4a3 3 0 0 1-3-3z"/></svg>
+                                    <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">Reply</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+               </div>
+
+                <div class=" w-[976px] h-[128px] flex gap-10 md:ml-36 ml-0 md:mt-10 mt-25" >
+                    
+                    <img class="h-[128px] w-[128px] rounded-full" src="/image/arlene 2.png" alt="">
+                    <div class="flex-col h-fit">
+                        <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">Arlene</p>
+                        <div class="text-white md:w-[816px] w-[160px] h-[72px] rounded-md flex-col items-center mt-2"> 
+                            <p>12/06/2020</p>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con</p>
+                            <div class="flex">
+                                <div class="flex gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="white" d="M21 8q.8 0 1.4.6T23 10v2q0 .175-.05.375t-.1.375l-3 7.05q-.225.5-.75.85T18 21H7V8l6-5.95q.375-.375.888-.437t.987.187t.7.7t.1.925L14.55 8zM9 8.85V19h9l3-7v-2h-9l1.35-5.5zM4 21q-.825 0-1.412-.587T2 19v-9q0-.825.588-1.412T4 8h3v2H4v9h3v2zm5-2V8.85z"/></svg>
+                                    <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">10</p>
+                                </div>
+
+                                 <div class="flex gap-10">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="white" d="M21 15h-3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1m0-1V5h-3v9zM5.28 5.97l-3 5c-.18.3-.28.66-.28 1.03v1a2 2 0 0 0 2 2h5.61l-1.46 5.44v.02c-.09.33-.01.7.26.96l6.01-6l-.01-.01c.37-.36.59-.86.59-1.41V7a2 2 0 0 0-2-2H7c-.73 0-1.37.39-1.72.97M1 12c0-.59.17-1.15.47-1.61l2.91-4.84C4.89 4.62 5.87 4 7 4h6a3 3 0 0 1 3 3v7c0 .83-.33 1.58-.88 2.12l-6.71 6.72l-.71-.71c-.53-.53-.7-1.29-.51-1.97L8.31 16H4a3 3 0 0 1-3-3z"/></svg>
+                                    <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">Reply</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+               </div>
+
+                <div class=" w-[976px] h-[128px] flex gap-10 md:ml-36 ml-0 md:mt-10 mt-25" >
+                    
+                    <img class="h-[128px] w-[128px] rounded-full" src="/image/arlene 3.png" alt="">
+                    <div class="flex-col h-fit">
+                        <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">Arlene</p>
+                        <div class="text-white md:w-[816px] w-[160px] h-[72px] rounded-md flex-col items-center mt-2"> 
+                            <p>12/06/2020</p>
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo con</p>
+                            <div class="flex">
+                                <div class="flex gap-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="white" d="M21 8q.8 0 1.4.6T23 10v2q0 .175-.05.375t-.1.375l-3 7.05q-.225.5-.75.85T18 21H7V8l6-5.95q.375-.375.888-.437t.987.187t.7.7t.1.925L14.55 8zM9 8.85V19h9l3-7v-2h-9l1.35-5.5zM4 21q-.825 0-1.412-.587T2 19v-9q0-.825.588-1.412T4 8h3v2H4v9h3v2zm5-2V8.85z"/></svg>
+                                    <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">10</p>
+                                </div>
+
+                                 <div class="flex gap-10">
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="white" d="M21 15h-3a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1m0-1V5h-3v9zM5.28 5.97l-3 5c-.18.3-.28.66-.28 1.03v1a2 2 0 0 0 2 2h5.61l-1.46 5.44v.02c-.09.33-.01.7.26.96l6.01-6l-.01-.01c.37-.36.59-.86.59-1.41V7a2 2 0 0 0-2-2H7c-.73 0-1.37.39-1.72.97M1 12c0-.59.17-1.15.47-1.61l2.91-4.84C4.89 4.62 5.87 4 7 4h6a3 3 0 0 1 3 3v7c0 .83-.33 1.58-.88 2.12l-6.71 6.72l-.71-.71c-.53-.53-.7-1.29-.51-1.97L8.31 16H4a3 3 0 0 1-3-3z"/></svg>
+                                    <p class="w-[55px] h-[24px] text-white font-poppins font-400 text-[16px]  ">Reply</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+               </div>
+               <!-- next...  -->
+            </div>
+            
+        </section>
     </div>
 </body>
 </html>
