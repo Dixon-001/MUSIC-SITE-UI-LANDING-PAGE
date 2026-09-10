@@ -332,6 +332,15 @@
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
+  .mb-6 {
+    margin-bottom: calc(var(--spacing) * 6);
+  }
+  .mb-8 {
+    margin-bottom: calc(var(--spacing) * 8);
+  }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
   }
@@ -356,8 +365,14 @@
   .ml-5 {
     margin-left: calc(var(--spacing) * 5);
   }
+  .ml-6 {
+    margin-left: calc(var(--spacing) * 6);
+  }
   .ml-7 {
     margin-left: calc(var(--spacing) * 7);
+  }
+  .ml-8 {
+    margin-left: calc(var(--spacing) * 8);
   }
   .ml-10 {
     margin-left: calc(var(--spacing) * 10);
@@ -439,6 +454,12 @@
   }
   .hidden {
     display: none;
+  }
+  .inline {
+    display: inline;
+  }
+  .inline-block {
+    display: inline-block;
   }
   .table {
     display: table;
@@ -538,6 +559,12 @@
   }
   .h-\[128px\] {
     height: 128px;
+  }
+  .h-\[180px\] {
+    height: 180px;
+  }
+  .h-\[200px\] {
+    height: 200px;
   }
   .h-\[254px\] {
     height: 254px;
@@ -701,6 +728,9 @@
   .w-\[104px\] {
     width: 104px;
   }
+  .w-\[105px\] {
+    width: 105px;
+  }
   .w-\[110px\] {
     width: 110px;
   }
@@ -709,6 +739,9 @@
   }
   .w-\[118px\] {
     width: 118px;
+  }
+  .w-\[120px\] {
+    width: 120px;
   }
   .w-\[121px\] {
     width: 121px;
@@ -838,6 +871,9 @@
   }
   .w-\[353px\] {
     width: 353px;
+  }
+  .w-\[355px\] {
+    width: 355px;
   }
   .w-\[370px\] {
     width: 370px;
@@ -1168,6 +1204,12 @@
   .pl-4 {
     padding-left: calc(var(--spacing) * 4);
   }
+  .pl-8 {
+    padding-left: calc(var(--spacing) * 8);
+  }
+  .pl-10 {
+    padding-left: calc(var(--spacing) * 10);
+  }
   .text-center {
     text-align: center;
   }
@@ -1266,8 +1308,17 @@
     .md\:mt-5 {
       margin-top: calc(var(--spacing) * 5);
     }
+    .md\:mt-8 {
+      margin-top: calc(var(--spacing) * 8);
+    }
     .md\:mt-10 {
       margin-top: calc(var(--spacing) * 10);
+    }
+    .md\:mt-20 {
+      margin-top: calc(var(--spacing) * 20);
+    }
+    .md\:mt-22 {
+      margin-top: calc(var(--spacing) * 22);
     }
     .md\:mt-40 {
       margin-top: calc(var(--spacing) * 40);
@@ -1295,6 +1346,12 @@
     }
     .md\:mr-20 {
       margin-right: calc(var(--spacing) * 20);
+    }
+    .md\:mb-0 {
+      margin-bottom: 0px;
+    }
+    .md\:mb-4 {
+      margin-bottom: calc(var(--spacing) * 4);
     }
     .md\:mb-10 {
       margin-bottom: calc(var(--spacing) * 10);
@@ -1404,14 +1461,26 @@
     .md\:h-\[96px\] {
       height: 96px;
     }
+    .md\:h-\[118px\] {
+      height: 118px;
+    }
+    .md\:h-\[128px\] {
+      height: 128px;
+    }
     .md\:h-\[576px\] {
       height: 576px;
     }
     .md\:h-\[712px\] {
       height: 712px;
     }
+    .md\:w-\[0px\] {
+      width: 0px;
+    }
     .md\:w-\[16px\] {
       width: 16px;
+    }
+    .md\:w-\[26px\] {
+      width: 26px;
     }
     .md\:w-\[69px\] {
       width: 69px;
@@ -1421,6 +1490,9 @@
     }
     .md\:w-\[102px\] {
       width: 102px;
+    }
+    .md\:w-\[105px\] {
+      width: 105px;
     }
     .md\:w-\[106px\] {
       width: 106px;
@@ -1443,14 +1515,41 @@
     .md\:w-\[223px\] {
       width: 223px;
     }
+    .md\:w-\[255px\] {
+      width: 255px;
+    }
     .md\:w-\[256px\] {
       width: 256px;
+    }
+    .md\:w-\[260px\] {
+      width: 260px;
+    }
+    .md\:w-\[262px\] {
+      width: 262px;
+    }
+    .md\:w-\[265px\] {
+      width: 265px;
+    }
+    .md\:w-\[270px\] {
+      width: 270px;
+    }
+    .md\:w-\[275px\] {
+      width: 275px;
+    }
+    .md\:w-\[280px\] {
+      width: 280px;
+    }
+    .md\:w-\[300px\] {
+      width: 300px;
     }
     .md\:w-\[338px\] {
       width: 338px;
     }
     .md\:w-\[352px\] {
       width: 352px;
+    }
+    .md\:w-\[355px\] {
+      width: 355px;
     }
     .md\:w-\[416px\] {
       width: 416px;
@@ -1563,6 +1662,9 @@
     .md\:gap-\[10px\] {
       gap: 10px;
     }
+    .md\:px-2 {
+      padding-inline: calc(var(--spacing) * 2);
+    }
     .md\:px-\[1\] {
       padding-inline: 1;
     }
@@ -1589,6 +1691,9 @@
     }
     .md\:pt-\[320px\] {
       padding-top: 320px;
+    }
+    .md\:pl-2 {
+      padding-left: calc(var(--spacing) * 2);
     }
     .md\:text-2xl {
       font-size: var(--text-2xl);
